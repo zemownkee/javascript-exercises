@@ -1,7 +1,7 @@
-const removeFromArray = function(...theArgs) {
+const removeFromArray = function(firstArray, ...theArgs) {
    
-    const initialArray = theArgs[0];
-    const removalArgs = theArgs.slice(1);
+    const initialArray = firstArray;
+    const removalArgs = theArgs;
     const newArray = [];
     
     for(const item of initialArray) {
