@@ -1,11 +1,8 @@
 const removeFromArray = function(firstArray, ...theArgs) {
-   
-    const initialArray = firstArray;
-    const removalArgs = theArgs;
     const newArray = [];
     
-    for(const item of initialArray) {
-        if (removalArgs[removalArgs.indexOf(item)] === item) {
+    for(const item of firstArray) {
+        if (theArgs[theArgs.indexOf(item)] === item) {
             continue;
         } else {
             newArray.push(item);
