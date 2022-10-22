@@ -1,12 +1,23 @@
 const sumAll = function(firstNum, lastNum) {
+
 //validate input
-if(firstNum < 0 || lastNum <0 ||)
+let startNum;
+let endNum;
+
+if(typeof(firstNum) != "number" || typeof(lastNum)  !=  "number" || firstNum < 0 || lastNum < 0) {
+    return 'ERROR';
+} else {
+    startNum = (firstNum < lastNum) ? firstNum : lastNum;
+    console.log(startNum);
+    endNum = (firstNum < lastNum) ? lastNum : firstNum;
+    console.log(endNum);
+}
 
 //create addition array
-const addArray = [firstNum, lastNum];
+const addArray = [startNum, endNum];
 let sum = 0;
-//loop through numbers between first and last to complete array
-for(i = firstNum; i < lastNum; i++) {
+
+for(i = startNum; i < endNum; i++) {
     addArray.push(i);
 }
 
