@@ -1,9 +1,6 @@
 const sumAll = function(firstNum, lastNum) {
 
 //validate input
-let startNum;
-let endNum;
-
 if(typeof(firstNum) != "number" || typeof(lastNum)  !=  "number" || firstNum < 0 || lastNum < 0) {
     return 'ERROR';
 } else {
