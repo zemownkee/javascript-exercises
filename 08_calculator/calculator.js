@@ -17,16 +17,25 @@ const sum = function(arrayArg) {
   return output;
 };
 
-const multiply = function() {
-
+const multiply = function(arrayArg) {
+  const output = arrayArg.reduce((total, item) => total * item, 1)
+  return output;
 };
 
-const power = function() {
-	
+const power = function(a, b) {
+  let accumulator = 1;
+  for(let i = 0; i < b; i++) {
+    accumulator *= a;
+  }
+  return accumulator;
 };
 
-const factorial = function() {
-	
+const factorial = function(number) {
+  let output = 1;
+  for(let temp = number; temp > 1; temp--) {
+    output *= temp; 
+  }
+	return output;
 };
 
 // Do not edit below this line
